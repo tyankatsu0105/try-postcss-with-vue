@@ -1,0 +1,19 @@
+// @see https://github.com/postcss/postcss-dark-theme-class
+:root {
+  --text-color: black;
+  --background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: white;
+    --background-color: black;
+  }
+}
+
+p{
+  color: var(--text-color);
+}
+body {
+  background: var(--background-color);
+}
